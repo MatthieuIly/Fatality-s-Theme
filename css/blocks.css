@@ -90,6 +90,14 @@
 }
 
 #block-user-0 /* "User login form" block */ {
+	margin-top: 5px; /* Ajout Fatality : On décale légèrement le bloc pour qu'il ne soit pas collé au bord */
+	background-image: url(../images/elements_background.png); /* Ajout Fatality : image de fond */
+	color: white; /* Ajout Fatality : couleur par défaut pour le texte */
+}
+
+/* Ajout Fatality : On offre une petite marge au contenu du bloc pour éviter de le coller au bord */
+#block-user-0 .content {
+	margin-left: 5px;
 }
 
 #block-user-1 /* "Navigation" block for Drupal navigation menu */ {
@@ -109,4 +117,11 @@
 /* Ajout Fatality : On offre une petite marge au contenu du bloc pour éviter de le coller au bord */
 #block-user-3  .content{
 	margin-left: 5px;
+}
+
+/* Ajout Fatality : Configuration pour le bloc progression !!! ATTENTION !!! Changer la position du bloc changera son id !!! */
+#block-block-2 {
+	margin-top: 5px; /* Ajout Fatality : On décale légèrement le bloc pour qu'il ne soit pas collé au bord */
+	background-image: url(../images/elements_background.png); /* Ajout Fatality : image de fond */
+	color: white; /* Ajout Fatality : couleur par défaut pour le texte */
 }
