@@ -1,0 +1,85 @@
+/**
+ * @file
+ * Navigation Styling
+ *
+ * Default menu styling (ul.menu) is defined in system-menus.css.
+ */
+
+
+/*
+ * The active item in a Drupal menu
+ */ 
+li a.active {
+  color: white; /* Ajout Fatality : On change la couleur pour le lien actif pour qu'il se voie mieux sur le fond sombre */
+}
+
+/*
+ * Navigation bar
+ */
+#navigation {
+}
+
+.region-navigation {
+}
+/* Ajout Fatality : menu de navigation */
+#navigation ul {
+ padding:0;
+ margin:0;
+ list-style-type:none;
+}
+ 
+#navigation li {
+ float:left; /*pour IE*/
+}
+ 
+#navigation ul li a {
+ display:block;
+ float:left;
+ text-decoration:none;
+ text-align:center;
+ background-image:url(../images/menu_background.png);
+ background-position:0px 195px;
+ position:relative;
+ top: -10px;
+ }
+ 
+#navigation ul li a p {
+ position:relative;
+ top:-50px;
+ /*left:-20px;*/
+ /*color:#FFFFFF;*/
+ color:gold;
+}
+ 
+#navigation ul li a:hover {
+ background-position:0px 130px;
+} 
+
+#navigation ul li a:hover p{
+ color:white;
+} 
+/* Ajout Fatality : Fin ajout pour menu Fatality */
+ 
+/*
+ * Primary and Secondary menu links
+ */
+#main-menu {
+}
+
+#main-menu li {
+}
+
+#secondary-menu {
+}
+
+/*
+ * Menu blocks
+ */
+.block-menu {
+}
+
+/*
+ * "Menu block" blocks. See http://drupal.org/project/menu_block
+ */
+.block-menu_block {
+}

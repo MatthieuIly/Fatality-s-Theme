@@ -1,0 +1,87 @@
+/**
+ * @file
+ * Page Background Styling
+ *
+ * The default layout method of Zen doesn't give themers equal-height columns.
+ * However, equal-height columns are difficult to achieve and totally
+ * unnecessary. Instead, use the Faux Columns method described in the following
+ * ALA article:
+ *   http://www.alistapart.com/articles/fauxcolumns/
+ */
+
+
+body {
+  margin: 0;
+  padding: 0;
+  background-image:url(../images/rage-of-the-firelands-background.jpg);
+  background-attachment:fixed;
+  background-repeat:no-repeat;
+  background-position:center;
+}
+
+#page-wrapper {
+}
+
+#page {
+}
+
+#header {
+}
+
+#header .section {
+}
+
+#main-wrapper {
+}
+
+#main {
+	background-image: url(../images/background_main.png); /* Ajout Fatality : background image for the main content area */
+	border-top-right-radius: 5px; /* Ajout Fatality : rounding top right border */
+	border-bottom-right-radius: 5px; /* Ajout Fatality : rounding bottom right border */
+}
+
+#navigation {
+	background-image: url(../images/back_navbar.png); /* Ajout Fatality : navbar's background image */
+	background-repeat: no-repeat; /* Ajout Fatality : don't repeat the background image */
+}
+
+/*
+ * First sidebar (on left in LTR languages, on right in RTL)
+ *
+ * Remember to NOT add padding or margin to your .region-sidebar-first
+ * (see the layout.css file.)
+ */
+.region-sidebar-first {
+}
+
+.region-sidebar-first .section {
+}
+
+/*
+ * Second sidebar (on right in LTR languages, on left in RTL)
+ *
+ * Remember to NOT add padding or margin to your .region-sidebar-second
+ * (see the layout.css file.)
+ */
+.region-sidebar-second {
+}
+
+.region-sidebar-second .section {
+}
+
+#content{
+}
+
+/* Ajout Fatality : Content background definition */
+#content .section {
+	background-image:url(../images/elements_background.png);
+	margin-right: 5px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+#footer {
+}
+
+#footer .section {
+}
