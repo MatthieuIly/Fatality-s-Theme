@@ -180,49 +180,58 @@
         </div></div><!-- /.section, /#navigation -->
       <?php endif; ?>
 	
-<!-- Ajout Fatality : End of navigation section's move -->
+<!-- Ajout Fatality : End of navigation section s move -->
 	
-    <div id="main-wrapper"><div id="main" class="clearfix<?php if ($primary_links || $navigation) { print ' with-navigation'; } ?>">
+    <div id="main-top"></div> <!-- Ajout Sanko: Coin haut gauche -->
+    <div id="main-top2"></div><!-- Ajout Sanko: Bordure du Haut -->
+    <div id="main-top3"></div><!-- Ajout Sanko: Coin haut droit -->
+    <div id="main-wrapper"> <!-- Conteneur des ŽlŽments de la page -->
+    <div id="main2"> <!-- Ajout Sanko: Bordure gauche - layout-fixed.css -->
+            <div id="main3"> <!-- Ajout Sanko: Bordure droite - layout-fixed.css -->
 
-      <div id="content" class="column"><div class="section">
+                <div id="main" class="clearfix<?php if ($primary_links || $navigation) { print ' with-navigation'; } ?>">
 
-        <?php if ($mission): ?>
-          <div id="mission"><?php print $mission; ?></div>
-        <?php endif; ?>
+                <?php print $sidebar_second; ?>
 
-        <?php print $highlight; ?>
+                <?php print $sidebar_first; ?>
 
-        <?php print $breadcrumb; ?>
-        <?php if ($title): ?>
-          <h1 class="title"><?php print $title; ?></h1>
-        <?php endif; ?>
-        <?php print $messages; ?>
-        <?php if ($tabs): ?>
-          <div class="tabs"><?php print $tabs; ?></div>
-        <?php endif; ?>
-        <?php print $help; ?>
+                <div id="content" class="column"><div class="section">
 
-        <?php print $content_top; ?>
+                    <?php if ($mission): ?>
+                    <div id="mission"><?php print $mission; ?></div>
+                    <?php endif; ?>
 
-        <div id="content-area">
-          <?php print $content; ?>
-        </div>
+                    <?php print $highlight; ?>
 
-        <?php print $content_bottom; ?>
+                    <?php print $breadcrumb; ?>
+                    <?php if ($title): ?>
+                    <h1 class="title"><?php print $title; ?></h1>
+                    <?php endif; ?>
+                    <?php print $messages; ?>
+                    <?php if ($tabs): ?>
+                    <div class="tabs"><?php print $tabs; ?></div>
+                    <?php endif; ?>
+                    <?php print $help; ?>
 
-        <?php if ($feed_icons): ?>
-          <div class="feed-icons"><?php print $feed_icons; ?></div>
-        <?php endif; ?>
+                    <?php print $content_top; ?>
 
-      </div></div><!-- /.section, /#content -->
+                    <div id="content-area">
+                        <?php print $content; ?>
+                    </div>
 
-<!-- Ajout Fatality : Navigation section's original place -->
+                    <?php print $content_bottom; ?>
 
-      <?php print $sidebar_first; ?>
+                    <?php if ($feed_icons): ?>
+                    <div class="feed-icons"><?php print $feed_icons; ?></div>
+                    <?php endif; ?>
 
-      <?php print $sidebar_second; ?>
+                </div></div><!-- /.section, /#content -->
 
-    </div></div><!-- /#main, /#main-wrapper -->
+
+            </div></div> <!-- /#main2, /#main3 -->
+        </div></div><!-- /#main, /#main-wrapper -->
+
+<!-- Ajout Fatality : Navigation section s original place -->
 
     <?php if ($footer || $footer_message || $secondary_links): ?>
       <div id="footer"><div class="section">
