@@ -107,6 +107,7 @@ div#site-name /* The name of the website */ {
  */
 #content {
 	color:#cccecc; /* Ajout fatality */
+    background-image: url("../images/elements_background.png");
 }
 
 #content .section {
@@ -173,18 +174,26 @@ tr.error /* High priority messages. See also the .error declaration below. */ {
 }
 
 div.tabs /* See also the tabs.css file. */ {
+    height: 50px;
 }
 
 .help /* Help text on a page */ {
-  margin: 1em 0;
+    margin: 1em 0;
+    background: url("../images/75-percent.png") repeat scroll 0 0 transparent;
 }
 
 .more-help-link /* Link to more help */ {
-  font-size: 0.85em;
-  text-align: right;
+    font-size: 0.85em;
+    text-align: right;
 }
 
 #content-area /* Wrapper for the actual page content */ {
+    background: url("../images/75-percent.png") repeat scroll 0 0 transparent;
+    border-left: 1px solid #46291E;
+    border-right: 1px solid #46291E;
+    border-top: 1px solid #46291E;
+    margin-bottom: 10px;
+    
 }
 
 ul.links /* List of links */ {

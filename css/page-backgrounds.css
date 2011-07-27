@@ -1,3 +1,9 @@
+/* @override 
+	http://localhost/~matthieuily/dupral-6.22/sites/all/themes/fatality/css/page-backgrounds.css?5
+	http://localhost/~matthieuily/dupral-6.22/sites/all/themes/fatality/css/blocks.css?5
+	http://localhost/~matthieuily/dupral-6.22/sites/all/themes/fatality/css/page-backgrounds.css?v
+*/
+
 /**
  * @file
  * Page Background Styling
@@ -11,12 +17,12 @@
 
 
 body {
-  margin: 0;
-  padding: 0;
-  background-image:url(../images/rage-of-the-firelands-background.jpg);
-  background-attachment:fixed;
-  background-repeat:no-repeat;
-  background-position:center;
+	background: #e3e3e3 url(../images/rage-of-the-firelands-background.jpg) no-repeat fixed 50%;
+	width: 100%;
+	height: 100%;
+	position: static;
+	color: #999999;
+    line-height: 135%;
 }
 
 #page-wrapper {
@@ -26,58 +32,50 @@ body {
 }
 
 #header {
+	
 }
 
 #header .section {
+	
+}
+
+#main-top3 {
+    background: url("../images/main-tm.png") repeat-x scroll 0 0 transparent;
+}
+
+#main-top3 {
+    height: 17px;
+    margin-left: 13px;
+    margin-right: 13px;
 }
 
 #main-wrapper {
+	background: url("../images/main-m.png") repeat scroll 0 0 transparent;
+	margin-left: 13px;
+    margin-right: 13px;
 }
+
+#main-top {
+    background: url("../images/main-tl.png") no-repeat scroll 0 0 transparent;
+}
+#main-top {
+    float: left;
+    height: 17px;
+    width: 13px;
+}
+
+#main-top2 {
+    background: url("../images/main-tr.png") no-repeat scroll 100% 0 transparent;
+}
+
+#main-top2 {
+    float: right;
+    height: 17px;
+    width: 13px;
+}
+
 
 #main {
-	background-image: url(../images/background_main.png); /* Ajout Fatality : background image for the main content area */
-	border-top-right-radius: 5px; /* Ajout Fatality : rounding top right border */
-	border-bottom-right-radius: 5px; /* Ajout Fatality : rounding bottom right border */
-}
-
-#navigation {
-	background-image: url(../images/back_navbar.png); /* Ajout Fatality : navbar's background image */
-	background-repeat: no-repeat; /* Ajout Fatality : don't repeat the background image */
-}
-
-/*
- * First sidebar (on left in LTR languages, on right in RTL)
- *
- * Remember to NOT add padding or margin to your .region-sidebar-first
- * (see the layout.css file.)
- */
-.region-sidebar-first {
-}
-
-.region-sidebar-first .section {
-}
-
-/*
- * Second sidebar (on right in LTR languages, on left in RTL)
- *
- * Remember to NOT add padding or margin to your .region-sidebar-second
- * (see the layout.css file.)
- */
-.region-sidebar-second {
-}
-
-.region-sidebar-second .section {
-}
-
-#content{
-}
-
-/* Ajout Fatality : Content background definition */
-#content .section {
-	background-image:url(../images/elements_background.png);
-	margin-right: 5px;
-	margin-top: 5px;
-	margin-bottom: 5px;
 }
 
 #footer {

@@ -14,11 +14,11 @@
 .with-wireframes #footer .section {
   margin: 1px;
   padding: 2px;
-  border: 1px solid #ccc;
+  border: 0px solid #ccc;
 }
 
 .with-wireframes .region-page-closure {
   margin-top: 1px;
   padding: 2px;
-  border: 1px solid #ccc;
+  border: 0px solid #ccc;
 }
